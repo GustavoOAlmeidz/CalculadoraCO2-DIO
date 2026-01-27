@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Emissão de CO²</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">🍃 Calculadora de Emissão de CO²</h1>
+        <p class="header__subtitle">Calcule a emissão de CO² das suas viagens e descubra o impacto ambiental de diferentes meios de transporte</p>
+    </header>
+
+    <main class="main">
+        <form class="calculator-form" id="calculator-form">
+            <div class="calculator-form__group">
+                <label class="calculator-form__label" for="origem">Origem</label>
+                <input
+                    class="calculator-form__input"
+                    type="text"
+                    id="origem"
+                    name="origem"
+                    list="cidades-list"
+                    placeholder="Digite a cidade de origem"
+                    required
+                >
+            </div>
+
+            <div class="calculator-form__group">
+                <label class="calculator-form__label" for="destino">Destino</label>
+                <input
+                    class="calculator-form__input"
+                    type="text"
+                    id="destino"
+                    name="destino"
+                    list="cidades-list"
+                    placeholder="Digite a cidade de destino"
+                    required
+                >
+            </div>
+
+            <datalist id="cidades-list">
+                <!-- Será preenchida por JavaScript -->
+            </datalist>
+
+            <div class="calculator-form__group">
+                <label class="calculator-form__label" for="distancia">Distância (km)</label>
+                <input
+                    class="calculator-form__input"
+                    type="number"
+                    id="distancia"
+                    name="distancia"
+                    readonly
+                    min="0"
+                    step="0.01"
+                >
+                <small class="calculator-form__help-text">A distância será preenchida automaticamente</small>
+            </div>
+
+            <div class="calculator-form__group">
+                <label class="calculator-form__checkbox-wrapper">
+                    <input
+                        class="calculator-form__checkbox"
+                        type="checkbox"
+                        id="distancia-manual"
+                        name="distancia-manual"
+                    >
+                    <span class="calculator-form__checkbox-label">Inserir distância manualmente</span>
+                </label>
+            </div>
+
+            <fieldset class="calculator-form__fieldset">
+                <legend class="calculator-form__legend">Modo de Transporte</legend>
+                <div class="transport-grid">
+                    <label class="transport-option">
+                        <input
+                            class="transport-option__input"
+                            type="radio"
+                            name="transport"
+                            value="bicicleta"
+                        >
+                        <span class="transport-option__content">
+                            <span class="transport-option__icon">🚲</span>
+                            <span class="transport-option__text">Bicicleta</span>
+                        </span>
+                    </label>
+
+                    <label class="transport-option">
+                        <input
+                            class="transport-option__input"
+                            type="radio"
+                            name="transport"
+                            value="carro"
+                            checked
+                        >
+                        <span class="transport-option__content">
+                            <span class="transport-option__icon">🚗</span>
+                            <span class="transport-option__text">Carro</span>
+                        </span>
+                    </label>
+
+                    <label class="transport-option">
+                        <input
+                            class="transport-option__input"
+                            type="radio"
+                            name="transport"
+                            value="onibus"
+                        >
+                        <span class="transport-option__content">
+                            <span class="transport-option__icon">🚌</span>
+                            <span class="transport-option__text">Ônibus</span>
+                        </span>
+                    </label>
+
+                    <label class="transport-option">
+                        <input
+                            class="transport-option__input"
+                            type="radio"
+                            name="transport"
+                            value="caminhao"
+                        >
+                        <span class="transport-option__content">
+                            <span class="transport-option__icon">🚚</span>
+                            <span class="transport-option__text">Caminhão</span>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <button class="calculator-form__submit" type="submit">Calcular Emissão</button>
+        </form>
+
+        <section class="results escondido" id="resultados">
+            <h2 class="results__title">Resultados</h2>
+            <div class="results__content" id="conteudo-de-resultados"></div>
+        </section>
+
+        <section class="comparison escondido" id="comparacao">
+            <h2 class="comparison__title">Comparação de Transportes</h2>
+            <div class="comparison__content" id="resultado-de-comparacao"></div>
+        </section>
+
+        <section class="carbon-credits escondido" id="creditos-carbono">
+            <h2 class="carbon-credits__title">Créditos de Carbono</h2>
+            <div class="carbon-credits__content" id="conteudo-de-creditos-carbono"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Projeto GitHub</p>
+    </footer>
+
+    <script src="js/routes-data.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/calculadora.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
