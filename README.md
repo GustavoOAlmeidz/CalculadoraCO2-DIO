@@ -3,7 +3,7 @@
   <p>Uma aplicação web interativa para estimativa de emissões de carbono, construída com foco em produtividade e IA.</p>
   
   <h3>
-    🔴 <a href="[https://gustavooalmeidz.github.io/CalculadoraCO2-DIO/]" target="_blank">Acesse a Aplicação Online Aqui</a> 🔴
+    🔴 <a href="https://gustavooalmeidz.github.io/CalculadoraCO2-DIO/" target="_blank">Acesse a Aplicação Online Aqui</a> 🔴
   </h3>
 
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
@@ -26,12 +26,14 @@ O objetivo foi aplicar técnicas avançadas de engenharia de prompts diretamente
 * Automatizar a criação de *boilerplates* e estruturas repetitivas em HTML/CSS/JS.
 * Garantir a qualidade da manipulação do DOM através da validação contínua do código gerado pela Inteligência Artificial.
 
-Você pode conferir a validade técnica desta habilidade através do **[Certificado Oficial de Conclusão H9O2CVTT]([COLOQUE_AQUI_O_LINK_DO_SEU_CERTIFICADO_DIO])**.
+Você pode conferir a validade técnica desta habilidade através do **[Certificado Oficial de Conclusão H9O2CVTT](https://www.dio.me/certificate/H9O2CVTT)**.
 
 <br/>
 
 <div align="center">
-  <img src="[![H9O2CVTT_page-0001](https://github.com/user-attachments/assets/d3dd03e6-ce9d-44dc-9305-d55fe59ceb04)]" width="700" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Certificado GitHub Copilot - DIO">
+  <a href="https://www.dio.me/certificate/H9O2CVTT" target="_blank">
+    <img src="https://github.com/user-attachments/assets/d3dd03e6-ce9d-44dc-9305-d55fe59ceb04" width="700" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Certificado GitHub Copilot - DIO">
+  </a>
   <br/>
   <sup><em>Certificação Oficial GitHub Copilot na Prática.</em></sup>
 </div>
